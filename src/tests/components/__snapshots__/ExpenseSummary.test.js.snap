@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should pluralize correctly 1`] = `
+<div>
+  <p>
+    Viewing 1 expense totalling $1.95
+  </p>
+</div>
+`;
+
+exports[`should render ExpenseSummary header with no expenses correctly 1`] = `
+<div>
+  <p>
+    No Expenses to view
+  </p>
+</div>
+`;
+
+exports[`should render ExpenseSummary header with no expenses correctly 2`] = `
+<div>
+  <p>
+    Viewing 3 expenses totalling $1,141.95
+  </p>
+</div>
+`;
