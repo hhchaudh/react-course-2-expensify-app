@@ -91,7 +91,6 @@ test('Should edit database and update store', async () => {
     })
 });
 
-
 test('should setup add expense action object with provided values', () => {
   const action = addExpense(expenses[2]);
   expect(action).toEqual({
