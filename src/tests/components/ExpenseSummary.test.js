@@ -20,15 +20,15 @@ test('should pluralize correctly', () => {
 
 test('should have correct total and output for all expenses', () => {
   let wrapper = shallow(<ExpenseSummary expenses={expenses}/>);
-  expect(wrapper.find('p').text()).toEqual('Viewing 3 expenses totalling $1,141.95');
+  expect(wrapper.find('h1').text()).toEqual('Viewing 3 expenses totalling $1,141.95');
 });
 
 test('should have correct total and output for one expense', () => {
   let wrapper = shallow(<ExpenseSummary expenses={[expenses[0]]}/>);
-  expect(wrapper.find('p').text()).toEqual('Viewing 1 expense totalling $1.95');
+  expect(wrapper.find('h1').text()).toEqual('Viewing 1 expense totalling $1.95');
 });
 
 test('should have correct total for all expenses', () => {
   let wrapper = shallow(<ExpenseSummary expenses={[]}/>);
-  expect(wrapper.find('p').text()).toEqual('No Expenses to view');
+  expect(wrapper.find('h1').text()).toEqual('Viewing 0 expenses totalling $0.00');
 });
